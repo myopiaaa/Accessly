@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">E</div>
+                <h2>Accessly</h2>
+            </div>
+
+            <div class="sidebar-label">MENU</div>
+
+            <nav class="navigation">
+                <a href="#" class="nav-link active">
+                    <span class="nav-icon">D</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">B</span>
+                    Browse Equipment
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">R</span>
+                    My Requests
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">H</span>
+                    Borrowing History
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">P</span>
+                    My Profile
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="student-info">
+                    <div class="avatar">AS</div>
+                    <div>
+                        <h4>Alex Santos</h4>
+                        <p>Student Account</p>
+                    </div>
+                </div>
+
+                <a href="#" class="logout">
+                    <span class="nav-icon">↪</span>
+                    Logout
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="breadcrumb">
+                    Student Portal <span>/</span> Dashboard
+                </div>
+
+                <div class="topbar-right">
+                    <button class="notification">!</button>
+
+                    <div class="topbar-profile">
+                        <div class="avatar small">AS</div>
+                        <div>
+                            <h4>Alex Santos</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="dashboard-content">
+
+                <div class="welcome-section">
+                    <div>
+                        <p class="date">Monday, November 23, 2026</p>
+                        <h1>Good afternoon, Alex!</h1>
+                        <p class="welcome-description">
+                            Here's an overview of your equipment borrowing activity.
+                        </p>
+                    </div>
+
+                    <a href="#" class="primary-button">
+                        + Browse Equipment
+                    </a>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon orange">P</div>
+                            <span class="stat-label">Pending Requests</span>
+                        </div>
+                        <h2>2</h2>
+                        <p>Awaiting approval</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon green">A</div>
+                            <span class="stat-label">Approved Requests</span>
+                        </div>
+                        <h2>1</h2>
+                        <p>Ready for pickup</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon blue">B</div>
+                            <span class="stat-label">Borrowed Items</span>
+                        </div>
+                        <h2>3</h2>
+                        <p>Currently in your possession</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon red">!</div>
+                            <span class="stat-label">Overdue Items</span>
+                        </div>
+                        <h2>0</h2>
+                        <p>Items past their due date</p>
+                    </div>
+
+                </div>
+            
+                <div class="dashboard-grid">
+           
+                    <section class="content-card activity-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Recent Borrowing Activity</h3>
+                                <p>Track your latest equipment requests.</p>
+                            </div>
+
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Request ID</th>
+                                        <th>Equipment</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>REQ-001</td>
+                                        <td>Laptop</td>
+                                        <td>Nov 22, 2026</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>REQ-002</td>
+                                        <td>Projector</td>
+                                        <td>Nov 21, 2026</td>
+                                        <td><span class="status approved">Approved</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>REQ-003</td>
+                                        <td>Extension Cord</td>
+                                        <td>Nov 20, 2026</td>
+                                        <td><span class="status borrowed">Borrowed</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>REQ-004</td>
+                                        <td>HDMI Cable</td>
+                                        <td>Nov 18, 2026</td>
+                                        <td><span class="status returned">Returned</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="content-card returns-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Upcoming Returns</h3>
+                                <p>Keep track of your return dates.</p>
+                            </div>
+                        </div>
+
+                        <div class="return-item">
+                            <div class="return-details">
+                                <h4>Laptop</h4>
+                                <p>Asset ID: EQ-001</p>
+                            </div>
+
+                            <div class="return-date">
+                                <span>Due Date</span>
+                                <strong>Nov 25, 2026</strong>
+                            </div>
+                        </div>
+
+                        <div class="return-item">
+                            <div class="return-details">
+                                <h4>Projector</h4>
+                                <p>Asset ID: EQ-005</p>
+                            </div>
+
+                            <div class="return-date">
+                                <span>Due Date</span>
+                                <strong>Nov 27, 2026</strong>
+                            </div>
+                        </div>
+
+                        <a href="#" class="view-all return-link">
+                            View Borrowing History
+                        </a>
+                    </section>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-left">
+            <div class="brand">
+                <div class="brand-icon">E</div>
+                <h2>Accessly</h2>
+            </div>
+
+            <div class="left-content">
+                <p class="welcome-label">STUDENT PORTAL</p>
+                <h1>Get started with easier equipment borrowing.</h1>
+                <p>
+                    Create your student account to browse campus equipment,
+                    submit borrowing requests, and monitor your transactions.
+                </p>
+            </div>
+
+            <div class="left-footer">
+                Campus Equipment Borrowing and Inventory Management System
+            </div>
+        </div>
+
+        <div class="auth-right">
+            <div class="auth-form-container signup-form">
+
+                <div class="mobile-brand">
+                    <div class="brand-icon">E</div>
+                    <h2>EquipTrack</h2>
+                </div>
+
+                <div class="form-heading">
+                    <h1>Create an Account</h1>
+                    <p>Enter your student information to get started.</p>
+                </div>
+
+                <form action="signin.html" method="get">
+
+                    <div class="form-group">
+                        <label for="student-id">Student ID</label>
+                        <input
+                            type="text"
+                            id="student-id"
+                            name="student_id"
+                            placeholder="Enter your student ID"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="full_name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">School Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your school email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <input
+                                type="text"
+                                id="course"
+                                name="course"
+                                placeholder="e.g. BSCS"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="section">Year and Section</label>
+                            <input
+                                type="text"
+                                id="section"
+                                name="section"
+                                placeholder="e.g. 2A"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm_password"
+                            placeholder="Re-enter your password"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="auth-button">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p class="switch-page">
+                    Already have an account?
+                    <a href="signin.html">Sign in</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
